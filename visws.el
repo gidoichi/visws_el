@@ -28,8 +28,6 @@
 
 ;;; Code:
 
-(require 'latin1-disp)
-
 (defface visible-whitespace '((t :foreground "blue" :bold t))
   "Face for control-characters revealed by `visible-whitespace-mode'.")
 
@@ -54,7 +52,7 @@ The characters in are displayed using the `visible-whitespace' face."
 (defun visws-legal-display-vector-p (vec)
   "Return true if every character in the display vector VEC can be displayed."
   (let ((i 0) (len (length vec)))
-    (while (and (< i len) (latin1-char-displayable-p (aref vec i)))
+    (while (and (< i len) (char-displayable-p (aref vec i)))
       (setq i (1+ i)))
     (= i len)))
 
