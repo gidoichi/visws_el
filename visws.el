@@ -92,4 +92,6 @@ Returns non-nil if the new state is enabled."
           (aset buffer-display-table (car entry) nil))
       (setq buffer-display-table nil))))
 
+(provide 'visws)
+
 ;;; visws.el ends here
