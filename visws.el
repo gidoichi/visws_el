@@ -60,6 +60,7 @@ The characters in are displayed using the `visible-whitespace' face."
 ;; a local display table or not.
 (defvar visws-display-table-was-local nil)
 
+;;;###autoload
 (define-minor-mode visible-whitespace-mode
   "Toggle Visible Whitespace mode
 When active, normally invisible whitespace characters are made visible.
