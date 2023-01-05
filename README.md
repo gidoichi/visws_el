@@ -1,3 +1,5 @@
+This repository is archived, because [vises.el](https://github.com/gidoichi/emacswiki.org/blob/597a540c448de7f726bd3460866047402585f754/visws.el) in emacswiki.org is the same.
+
 # visws.el
 Make whitespace visible
 
